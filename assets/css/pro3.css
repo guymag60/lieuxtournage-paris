@@ -1,0 +1,222 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #eccbc5;
+    font-size: 20px;
+}
+
+#pageprecedente{
+    display: inline;
+     width: 20%;
+     border: 4px solid rgb(211, 166, 166);
+     border-radius: 15px;
+     padding: 5px;
+     font-weight: 200;
+     }
+  
+    #pageprecedente a{
+      text-decoration: none;
+    }
+  
+  #pageprecedente a:hover{
+     color: brown;
+     cursor: pointer;
+  }
+
+    /* **********SLIDER************ */
+html {
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    margin:0px;
+  }
+  
+  .container {
+    width:1024px;
+    max-width:100%;
+    margin:0 auto;
+  }
+  
+  .slider {
+    position:relative;
+    height:0px;
+    padding-bottom:66.666666667%;
+    margin-top:24px;
+    margin-bottom:24px;
+  }
+  
+  .slider__after {
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:1;
+    width:100%;
+    height:100%;
+    background-image:url('../../assets/images/Le pro/_DSC4654.jpg');
+    background-size:cover;
+    pointer-events: none;
+  }
+  
+  .slider__before {
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:2;
+    width:50%;
+    height:100%;
+    background-image:url('../../assets/images/Le pro/Pro25.png');
+    background-size:cover;
+    pointer-events: none;
+    overflow:hidden;
+  }
+  
+  .slider__before:before {
+    content:'1981';
+    position:absolute;
+    left:8px;
+    top:8px;
+  }
+  
+  .slider__after:before {
+    content:'2022';
+    position:absolute;
+    right:8px;
+    top:8px;
+  }
+  
+  .slider__separator {
+    position:absolute;
+    left:50%;
+    width:2px;
+    top:0px;
+    bottom:0px;
+    background:rgba(255,255,255,0.7);
+    box-shadow: 0 5px 10px 0px rgba(0,0,0,0.5);
+    cursor:ew-resize;
+    z-index:3;
+    transform:translateX(-50%);
+  }
+  
+  .slider__range {
+    position:absolute;
+    width:100%;
+    bottom:0px;
+    z-index: 3;
+    appearance: none;
+    background:rgba(255,255,255,0.3);
+    outline:none;
+    margin:0px;
+  }
+  
+  .slider__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width:12px;
+    height:16px;
+    background:white;
+  }
+  
+  .slider__range::-moz-slider-thumb {
+    -moz-appearance: none;
+    width:12px;
+    height:16px;
+    background:white;
+  }
+  
+  .slider--tokyo .slider__before {
+    background-image: url('../../assets/images/Le pro/Pro25.png');
+  }
+  
+  .slider--tokyo .slider__after {
+    background-image: url('../../assets/images/Le pro/_DSC4654.jpg');
+  }
+  
+  .slider--tokyo .slider__separator:before {
+    content:'';
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    border:solid 2px white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  .slider--tokyo .slider__range {
+    display:none;
+  }
+  
+  .slider--tokyo .slider__before:before, 
+  .slider--tokyo .slider__after:before {
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(255,0,0,0.5);
+    padding:8px 16px;
+    border-radius:8px;
+    margin-left:8px;
+    margin-right:8px;
+  }
+
+   /* *****************FOOTER********************** */
+.footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 35px 50px;
+  }
+  
+  .footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+  }
+  /* Footer links */
+  
+  .footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+    text-align: center;
+  }
+  
+  .footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  @media (max-width: 840px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-right {
+      text-align: center;
+    }
+   
+    }
+    .footer-distributed .footer-left p.footer-links {
+      line-height: 1.8;
+    }
+  
